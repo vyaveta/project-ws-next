@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 2rem;
+    height: 4rem;
+    background: rgba(255,255,255,0.50);
+    position: fixed;
+    width: 100vw;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}

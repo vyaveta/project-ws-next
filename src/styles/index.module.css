@@ -1,0 +1,12 @@
+.container{
+    background: url('../../public/images/tkmSchoolEdited.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden !important;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
