@@ -7,6 +7,7 @@ import { store } from '../store'
 import { Provider, useSelector } from 'react-redux'
 import { SideMenu } from '@/components/SideMenu/SideMenu'
 import { RootState } from '../store'
+import { Footer } from '@/components/Footer/Footer'
 
 const nunito = Nunito({
   subsets: ['latin']
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <div className="pt-16">
         <Component {...pageProps} />
       </div>
+      <Footer />
      </main>
     </Provider>
   )

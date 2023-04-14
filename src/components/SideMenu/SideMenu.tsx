@@ -2,15 +2,29 @@ import { setShowSideBarAction } from "@/Redux/Actions"
 import { navbarTitles } from "@/database/datas"
 import { motion } from "framer-motion"
 import { useRouter } from "next/router"
+import { useEffect } from "react"
 import {HiMenuAlt4 , HiX} from 'react-icons/hi'
 import { useDispatch } from "react-redux"
 
 export const SideMenu : React.FC = () => {
     const dispatch = useDispatch()
     const router = useRouter()
+    
+    useEffect(() => {
+      const scrollY = window.scrollY;
+      window.scrollTo(0,0)
+      // document.body.style.height = '100vh'
+      document.body.style.overflow = 'hidden'
+      return () => {
+        // document.body.style.height = '';
+        document.body.style.overflow = 'auto';
+        window.scrollTo(0, scrollY);
+      }
+    },[])
+
     return (
         <motion.div
-        className="absolute w-full h-full bg-white flex flex-col align-top"
+        className="absolute w-full h-full bg-white flex flex-col align-top top-0"
         whileInView={{x:[300,0]}}
         transition={{duration: 0.85, ease: 'easeOut'}}
         >

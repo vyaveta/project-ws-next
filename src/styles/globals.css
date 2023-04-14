@@ -23,3 +23,15 @@
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 10px 10px 6px rgb(55, 126, 248);
 }
+
+.secondary-button{
+  background: grey;
+  padding: 0.4rem 1rem;
+  font-weight: 500;
+  color: white;
+  border-radius: .5rem;
+}
+
+.secondary-button:hover{
+  background: rgb(111, 111, 111);
+}

@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import style from '../styles/index.module.css'
 import { Nunito } from 'next/font/google'
-import { sloganArray, titleSlogan } from '@/database/datas'
+import { cources, featureTabs, sloganArray, titleSlogan } from '@/database/datas'
+import Card from '@/components/Cards/Card'
+import { Quote } from '@/components/Quotes/Quote'
 
 const font = Nunito({
   subsets: ['latin']
@@ -24,7 +26,27 @@ export default function Home() {
           ))
         }
        </div>
+       <div className='flex gap-3 px-2 w-full flex-wrap' >
+        {
+          featureTabs.map((item,index) => (
+            <button className='secondary-button' key={`featureButtons${index}`}>{item.title}</button>
+          ))
+        }
+       </div>
       </div>
+      <div>
+        <div className='flex items-center justify-center'>
+          <h2 className='text-blue-500 text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold' >Availabe Cources</h2>
+        </div>
+        <div className='flex flex-row gap-3 flex-wrap justify-evenly mt-5' >
+        {
+          cources.map((item,index) => (
+            <Card key={`cources${index}`} item={item} />
+          ))
+        }
+        </div>
+        <Quote />
+       </div>
     </>
   )
 }
