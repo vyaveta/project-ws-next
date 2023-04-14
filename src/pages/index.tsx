@@ -45,7 +45,10 @@ export default function Home() {
           ))
         }
         </div>
-        <Quote />
+        {/* <Quote /> */}
+        <h1 className='text-blue-500 bg-white text-lg m-10 center underline' >This app is under developement</h1>
+        <p className='center px-4'>For more info, visit github/vyaveta for the source code and submit your contributions on github.  </p>
+        <a className='text-blue-700 underline px-2' href='https://github.com/vyaveta' target='_blank'> click here to view project source code </a>
        </div>
     </>
   )
