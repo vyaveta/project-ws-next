@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { BsChevronCompactLeft } from 'react-icons/bs'
 import { BsChevronCompactRight } from 'react-icons/bs'
 
-const nss = () => {
+const Nss = () => {
     const [seeDetails, setSeeDetails] = useState(false)
     const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -113,4 +113,4 @@ const nss = () => {
     )
 }
 
-export default nss
+export default Nss
