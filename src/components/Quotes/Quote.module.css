@@ -1,0 +1,25 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: red; */
+}
+.wrapper article:nth-child(even){
+    /* background-color: #28e71a !important; */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 780px){
+    .wrapper article:nth-child(even) {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1rem;
+    }
+    .wrapper article:nth-child(odd) {
+        display: flex;
+        flex-direction: column-reverse;
+        /* background-color: blue !important; */
+        padding: 1rem;
+    }
+}

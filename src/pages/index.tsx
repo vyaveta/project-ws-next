@@ -35,8 +35,8 @@ export default function Home() {
        </div>
       </div>
       <div>
-        <div className='flex items-center justify-center'>
-          <h2 className='text-blue-500 text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold' >Availabe Cources</h2>
+        <div className='flex items-center justify-center mt-5'>
+          <h2 className='text-slate-500 text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold' >Availabe Cources</h2>
         </div>
         <div className='flex flex-row gap-3 flex-wrap justify-evenly mt-5' >
         {
@@ -45,10 +45,11 @@ export default function Home() {
           ))
         }
         </div>
-        {/* <Quote /> */}
-        <h1 className='text-blue-500 bg-white text-lg m-10 center underline' >This app is under developement</h1>
+        <Quote />
+        <p className='text-blue-500 text-center'>v1.2</p>
+        {/* <h1 className='text-blue-500 bg-white text-lg m-10 center underline' >This app is under developement</h1>
         <p className='center px-4'>For more info, visit github/vyaveta for the source code and submit your contributions on github.  </p>
-        <a className='text-blue-700 underline px-2' href='https://github.com/vyaveta' target='_blank'> click here to view project source code </a>
+        <a className='text-blue-700 underline px-2' href='https://github.com/vyaveta' target='_blank'> click here to view project source code </a> */}
        </div>
     </>
   )

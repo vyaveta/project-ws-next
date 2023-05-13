@@ -35,3 +35,7 @@
 .secondary-button:hover{
   background: rgb(111, 111, 111);
 }
+.componentImageIcon{
+  width: 1500px !important;
+  /* height: 500px; */
+}
