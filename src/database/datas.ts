@@ -9,7 +9,7 @@ export const navbarTitles = [
     },
     {
         title: 'Nss',
-        url: 'Nss'
+        url: 'nss'
     },
     {
         title: 'Koode',
