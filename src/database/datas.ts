@@ -8,12 +8,12 @@ export const navbarTitles = [
         url: ''
     },
     {
-        title: 'Koode',
-        url: 'koode'
+        title: 'Nss',
+        url: 'Nss'
     },
     {
-        title: 'Nss',
-        url: 'nss'
+        title: 'Koode',
+        url: 'koode'
     },
     {
         title: 'scouts',
@@ -100,8 +100,13 @@ export const footerDatas = [
 export const Quotes = [
     {
         name: 'Jack ma',
-        quote: 'something has to be done and someone has to do it',
-        img: ''
+        quote: 'A good boss is better than a good company.',
+        img: `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_fOcXQ8EKR5nxrejk0ZAc3XPtwSyz2opYfGTCMs4ycHbsA-um9KWEJqJXdDruFVPLV6M&usqp=CAU`
+    },
+    {
+        name: 'Elon musk',
+        quote: `Some people don't like change, but you need to embrace change if the alternative is disaster. ...`,
+        img: 'https://www.nme.com/wp-content/uploads/2022/12/Elon-Musk-main-696x442.jpg'
     }
 ]
 

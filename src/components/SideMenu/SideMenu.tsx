@@ -5,6 +5,7 @@ import { useRouter } from "next/router"
 import { useEffect } from "react"
 import {HiMenuAlt4 , HiX} from 'react-icons/hi'
 import { useDispatch } from "react-redux"
+import styles from './SideMenu.module.css'
 
 export const SideMenu : React.FC = () => {
     const dispatch = useDispatch()
@@ -24,7 +25,7 @@ export const SideMenu : React.FC = () => {
 
     return (
         <motion.div
-        className="absolute w-full h-full bg-white flex flex-col align-top top-0"
+        className={`absolute w-full h-full bg-white flex flex-col align-top top-0 ${styles.container}`}
         whileInView={{x:[300,0]}}
         transition={{duration: 0.85, ease: 'easeOut'}}
         >

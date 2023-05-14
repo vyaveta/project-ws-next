@@ -1,3 +1,4 @@
+import { Quotes } from '@/database/datas'
 import style from './Quote.module.css'
 
 export const Quote = () => {
@@ -9,7 +10,7 @@ export const Quote = () => {
 
            <div className={`${style.wrapper}`}>
 
-           <article className='flex flex-col-reverse md:flex-row items-center justify-evenly'>
+           {/* <article className='flex flex-col-reverse md:flex-row items-center justify-evenly'>
                 <div>
                 <p className="font-semibold text-lg text-slate-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, magni.</p>
                 <p className="text flex justify-end">- Jack Ma</p>
@@ -28,7 +29,32 @@ export const Quote = () => {
                     className='rounded-full'
                     width={300}
                     src="https://media.npr.org/assets/img/2021/01/06/gettyimages-1144029246-078c0658d34d11a6a677d8613756fab4ec7cdb36.jpg" alt="" />
+            </article> */}
+
+            {
+                Quotes.map((item,index) => (
+                    <article key={`quoteindexof${index}`} className='flex flex-col-reverse md:flex-row items-center justify-evenly'>
+                <div>
+                <p className="font-semibold text-lg text-slate-900">{item.quote}</p>
+                <p className="text flex justify-end">- {item.name}</p>
+                </div>
+                <img
+                    className='rounded-full'
+                    width={300}
+                    src={item.img} alt="" />
             </article>
+            // <article className='flex flex-col-reverse md:flex-row items-center justify-evenly'>
+            //     <div>
+            //     <p className="font-semibold text-lg text-slate-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, magni.</p>
+            //     <p className="text flex justify-end">- Jack Ma</p>
+            //     </div>
+            //     <img
+            //         className='rounded-full'
+            //         width={300}
+            //         src="https://media.npr.org/assets/img/2021/01/06/gettyimages-1144029246-078c0658d34d11a6a677d8613756fab4ec7cdb36.jpg" alt="" />
+            // </article>
+                ))
+            }
 
            </div>
         </div>
